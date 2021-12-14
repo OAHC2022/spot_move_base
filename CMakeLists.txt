@@ -8,7 +8,8 @@ project(spot_move_base)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  geometry_msgsmove_base
+  geometry_msgs
+  move_base
   roscpp
   rospy
   std_msgs
@@ -106,7 +107,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES spot_move_base
-#  CATKIN_DEPENDS geometry_msgsmove_base roscpp rospy std_msgs
+#  CATKIN_DEPENDS geometry_msgs move_base roscpp rospy std_msgs
 #  DEPENDS system_lib
 )
 
