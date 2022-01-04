@@ -1,5 +1,5 @@
 <launch>
- <node pkg="tf" type="static_transform_publisher" name="base_link_to_body"  args="0 0 0 0 0 1 /body /base_link 50" />
+ <node pkg="tf" type="static_transform_publisher" name="base_link_to_body"  args="0 0 0 0 0 0 /body /base_link 50" />
 
  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
   <rosparam file="$(find spot_move_base)/params/costmap_common_params.yaml" command="load" ns="global_costmap" />
