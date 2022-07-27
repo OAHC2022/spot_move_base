@@ -1,8 +1,8 @@
 global_costmap:
   global_frame: odom
   robot_base_frame: body
-  update_frequency: 30
-  publish_frequency: 30
+  update_frequency: 20
+  publish_frequency: 20
   width: 75.0
   height: 75.0
   resolution: 0.05
